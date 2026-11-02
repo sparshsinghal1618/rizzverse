@@ -1,0 +1,170 @@
+/* Mobile Responsive Styles */
+@media (max-width: 968px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 48px;
+        text-align: center;
+    }
+    
+    .hero-content {
+        align-items: center;
+    }
+    
+    .hero-description {
+        max-width: 100%;
+    }
+    
+    .demo-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .demo-btn {
+        align-self: center;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        flex-direction: column;
+        background: rgba(13, 9, 23, 0.95);
+        backdrop-filter: blur(20px);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+        padding: 24px 0;
+        gap: 16px;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-item {
+        margin: 8px 0;
+    }
+    
+    .nav-item-mobile {
+        display: block;
+    }
+    
+    .nav-actions {
+        display: none;
+    }
+    
+    .nav-toggle {
+        display: block;
+    }
+    
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .nav-toggle.active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+    
+    .nav-toggle.active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+    
+    .hero {
+        padding-top: 120px;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .hero-actions .btn {
+        width: 100%;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .feature-card {
+        padding: 24px;
+    }
+    
+    .cta-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .cta-actions .btn {
+        width: 100%;
+    }
+    
+    .container {
+        padding: 0 16px;
+    }
+    
+    .nav-container {
+        padding: 0 16px;
+    }
+    
+    .phone-container {
+        max-width: 280px;
+    }
+    
+    .chat-bubble {
+        max-width: 160px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 42px;
+    }
+    
+    .hero-subtitle {
+        font-size: 22px;
+    }
+    
+    .section-title {
+        font-size: 36px;
+    }
+    
+    .section-subtitle {
+        font-size: 18px;
+    }
+    
+    .cta-title {
+        font-size: 42px;
+    }
+    
+    .cta-subtitle {
+        font-size: 18px;
+    }
+    
+    .features, .demo, .cta {
+        padding: 80px 0;
+    }
+    
+    .feature-card {
+        padding: 20px;
+    }
+    
+    .demo-step {
+        padding: 16px;
+    }
+    
+    .phone-chat {
+        min-height: 280px;
+        padding: 12px;
+    }
+}
